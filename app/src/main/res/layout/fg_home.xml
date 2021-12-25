@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:background="@color/signin_red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/center"
+        android:background="@drawable/home_gradient">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.accu.attendance.customViews.MyTextView
+                android:id="@+id/wishTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_28sp" />
+
+            <com.accu.attendance.customViews.MyTextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_20sp" />
+
+            <com.accu.attendance.customViews.MyTextView
+                android:id="@+id/thoughtTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:maxLength="70"
+                android:maxLines="2"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_16sp" />
+        </LinearLayout>
+
+
+        <com.accu.attendance.customViews.MyTextView
+            android:id="@+id/lastStatusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14sp" />
+
+        <com.accu.attendance.customViews.MyTextView
+            android:id="@+id/monthTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_7dp"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_18sp" />
+    </RelativeLayout>
+
+    <noman.weekcalendar.WeekCalendar
+        android:id="@+id/calenderWC"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/center"
+        android:layout_margin="@dimen/_10dp"
+        app:dayNameLength="threeLetters"
+        app:daysBackgroundColor="@color/transparent"
+        app:daysTextColor="@color/Black"
+        app:daysTextSize="@dimen/_14sp"
+        app:numOfPages="1"
+        app:selectedBgColor="@color/White"
+        app:todaysDateBgColor="@color/todayBgColor"
+        app:weekBackgroundColor="@color/transparent"
+        app:weekTextColor="@color/DimGray"
+        app:weekTextSize="@dimen/_12sp" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@+id/calenderWC"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/signInIV"
+                android:layout_width="@dimen/_90dp"
+                android:layout_height="@dimen/_90dp"
+                android:src="@drawable/ic_signin" />
+
+            <com.accu.attendance.customViews.MyTextView
+                android:id="@+id/signInTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="In-Time\nAttendance"
+                android:textColor="@color/text_disable"
+                android:textSize="@dimen/_18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/signOutIV"
+                android:layout_width="@dimen/_90dp"
+                android:layout_height="@dimen/_90dp"
+                android:src="@drawable/ic_signout" />
+
+            <com.accu.attendance.customViews.MyTextView
+                android:id="@+id/signOutTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Out-Time\nAttendance"
+                android:textColor="@color/text_disable"
+                android:textSize="@dimen/_18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

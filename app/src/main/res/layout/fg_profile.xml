@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/inc_profile_header" />
+
+    <RelativeLayout
+        android:id="@+id/nameRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:layout_editor_absoluteY="206dp">
+
+        <com.accu.attendance.customViews.MyEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/nameIV"
+            android:background="@color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Full Name"
+            android:inputType="textCapWords"
+            android:textColor="@color/Black" />
+
+        <ImageView
+            android:id="@+id/nameIV"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4dp"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/nameV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameRL"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <RelativeLayout
+        android:id="@+id/emailRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameV">
+
+        <com.accu.attendance.customViews.MyEditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/emailIV"
+            android:background="@color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Email"
+            android:textColor="@color/Black" />
+
+        <ImageView
+            android:id="@+id/emailIV"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4dp"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/emailV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/emailRL"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/phoneRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailV">
+
+        <com.accu.attendance.customViews.MyEditText
+            android:id="@+id/phoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/phoneIV"
+            android:background="@color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="@color/Black" />
+
+        <ImageView
+            android:id="@+id/phoneIV"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4dp"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/phoneV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneRL" />
+
+    <RelativeLayout
+        android:id="@+id/depttRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneV">
+
+        <Spinner
+            android:id="@+id/depttSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/depttIV"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/depttIV"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4dp"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/depttV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depttRL" />
+
+    <RelativeLayout
+        android:id="@+id/empCodeRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depttV">
+
+        <com.accu.attendance.customViews.MyEditText
+            android:id="@+id/empCodeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toStartOf="@+id/empCodeIV"
+            android:background="@color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Employee Code"
+            android:textColor="@color/Black" />
+
+        <ImageView
+            android:id="@+id/empCodeIV"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4dp"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empCodeRL" />
+
+    <LinearLayout
+        android:id="@+id/saveLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:background="@color/White" />
+
+        <com.accu.attendance.customViews.MyTextView
+            android:id="@+id/saveTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signin_red"
+            android:gravity="center"
+            android:padding="@dimen/_12dp"
+            android:text="Save Changes"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_18sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

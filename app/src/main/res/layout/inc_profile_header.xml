@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_gradient"
+    android:padding="@dimen/_25dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picCIV"
+        android:layout_width="@dimen/_80dp"
+        android:layout_height="@dimen/_80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20dp"
+        app:civ_border_color="@color/White"
+        app:civ_border_width="2dp" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picCIV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_20sp" />
+</RelativeLayout>

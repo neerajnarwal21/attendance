@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Accutendance</string>
+
+    <string name="out_of_memory">Out Of Memory</string>
+    <string name="not_sufficient_permissions">Not sufficient permissions for this action\ngoto Settings > Apps > %1$s > Permissions</string>
+    <string name="choose_image_source">Choose Image Resource</string>
+    <string name="please_relaunch">"Please relaunch "</string>
+    <string name="check_gps">Location Update has encountered a problem. Please Check GPS is ON or OFF</string>
+    <string name="gps">" - GPS"</string>
+    <string name="this_device_is_not_supported">This Device is not supported</string>
+    <string name="problem_connecting_to_the_server">Problem connecting to server,please try later.</string>
+    <string name="connecting_to_internet">" Problem connecting to internet,please try again."</string>
+    <string name="connection_failed">" Connection failed,please try again."</string>
+    <string name="bad_request">" Bad request,please try again."</string>
+    <string name="not_found_please">" Not found,please try again."</string>
+    <string name="session_timeout_redirecting">Session timeout, Redirecting to login</string>
+    <string name="request_timeout_slow_connection">"Request Timeout\nMaybe due to slow connection"</string>
+    <string name="netwrk_status">Network Status</string>
+    <string name="retry">Retry</string>
+    <string name="are_you_sure_want_to_exit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="select_country">---Select Country---</string>
+    <string name="gps_is_disabled">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="money_unit">"$%1$s"</string>
+    <string name="please_wait">Please wait</string>
+    <string name="save">Save</string>
+    <string name="facebook_app_id">1395980143820497</string>
+    <string name="fb_login_protocol_scheme">fb1395980143820497</string>
+    <string name="finding_your_location">Finding your current Location</string>
+    <string name="unable_to_find_location">Unable to find your current location.</string>
+    <string name="signin_you_in">Signing You In</string>
+    <string name="signin_you_out">Signing You Out</string>
+    <string name="location_alert">Location alert!</string>
+    <string name="your_location_is_outside_parameter">Your %1$s location is outside the location parameter.\n\nAre you sure you want to continue anyway?</string>
+    <string name="signin">SignIn</string>
+    <string name="signout">SignOut</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="mark_signin">Mark SignIn</string>
+    <string name="mark_signout">Mark SignOut</string>
+    <string name="ok">Ok</string>
+    <string name="location_services_error">It seems like location services aren\'t connecting on your device due to lack of memory or restrictions from your Power Manager.\nPlease try launching Google Maps and goto current location then retry here for location.\nIf problem persists contact admin</string>
+    <string name="check_gps_on">Please check GPS is ON and working fine!</string>
+    <string name="good_morning">Good Morning !</string>
+    <string name="good_afternoon">Good Afternoon !</string>
+    <string name="good_evening">Good Evening !</string>
+    <string name="last_out_time">Last Out-Time : %1$s</string>
+    <string name="in_time">In-Time : %1$s</string>
+    <string name="accout_doesnt_exist">This account doesn\'t exists</string>
+    <string name="logging_out">Logging You out</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="sure_goback_without_saving">Sure to go back without saving changes ?</string>
+    <string name="drawer_home">Home</string>
+    <string name="drawer_change_pass">Change Password</string>
+    <string name="drawer_my_calender">My Calendar</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="alert">Alert !</string>
+    <string name="unable_to_initialize">Unable to initialize Google Services.\nMake sure your Internet connection speed is good.\nYou can try restart your phone, check if google apps like maps, gmail working or not.\nIf still problem persists then contact app admin</string>
+    <string name="close">Close</string>
+    <string name="short_leave">Short Leave</string>
+    <string name="half_day">Half Day</string>
+    <string-array name="hours">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+    <string-array name="mins">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+    <string-array name="snooze_mins">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+</resources>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/barRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/_7dp"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_toEndOf="@+id/backIV"
+            android:text="Back"
+            android:textColor="@color/White" />
+
+        <com.accu.attendance.customViews.MyTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:text="Sign Up"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barRL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_user"
+                android:hint="Full Name"
+                android:inputType="textCapWords"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/empCodeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_employee_code"
+                android:hint="Emp Code"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_10dp"
+                android:paddingTop="@dimen/_5dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20dp"
+                    android:src="@drawable/ic_department" />
+
+                <Spinner
+                    android:id="@+id/depttSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_toEndOf="@+id/image" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/image"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:background="@color/White_semi_trans" />
+            </RelativeLayout>
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/passET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <com.accu.attendance.customViews.MyEditText
+                android:id="@+id/conPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="-5dp"
+                android:drawablePadding="@dimen/_15dp"
+                android:drawableStart="@drawable/ic_password"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingBottom="18dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingStart="@dimen/_25dp"
+                android:paddingTop="@dimen/_7dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White_trans"
+                android:textSize="@dimen/_16sp" />
+
+            <LinearLayout
+                android:id="@+id/signInLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2dp"
+                    android:background="@color/White" />
+
+                <com.accu.attendance.customViews.MyTextView
+                    android:id="@+id/signUpTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/signin_red"
+                    android:gravity="center"
+                    android:padding="@dimen/_12dp"
+                    android:text="Sign Up"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2dp"
+                    android:background="@color/White" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottomLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <com.accu.attendance.customViews.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an Account?"
+                    android:textColor="@color/WhiteSmoke" />
+
+                <com.accu.attendance.customViews.MyTextView
+                    android:id="@+id/logInTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5dp"
+                    android:text="Log In"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

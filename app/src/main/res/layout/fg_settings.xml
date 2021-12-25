@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentCL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/topGrad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150dp"
+        android:background="@drawable/home_gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Settings"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/topGrad"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="SignOut Reminder"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="@id/notiV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topGrad" />
+
+    <Switch
+        android:id="@+id/notiSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topGrad" />
+
+    <View
+        android:id="@+id/notiV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notiSW" />
+
+    <Spinner
+        android:id="@+id/mSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent"
+        android:entries="@array/mins"
+        android:focusableInTouchMode="false"
+        android:gravity="start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notiV" />
+
+    <Spinner
+        android:id="@+id/hSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent"
+        android:entries="@array/hours"
+        android:focusableInTouchMode="false"
+        android:gravity="end"
+        app:layout_constraintEnd_toStartOf="@id/mSP"
+        app:layout_constraintTop_toBottomOf="@+id/notiV" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Reminder time  (in HH:mm)"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toTopOf="@+id/hourV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notiV" />
+
+    <View
+        android:id="@+id/hourV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mSP" />
+
+    <Spinner
+        android:id="@+id/snoozeSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/transparent"
+        android:entries="@array/snooze_mins"
+        android:focusableInTouchMode="false"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourV" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Snooze duration   (in mins)"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourV" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Changing reminder timing will take effect on next SignIn"
+        android:textColor="@color/DimGray"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <LinearLayout
+        android:id="@+id/saveLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:background="@color/White" />
+
+        <com.accu.attendance.customViews.MyTextView
+            android:id="@+id/saveTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signin_red"
+            android:gravity="center"
+            android:padding="@dimen/_12dp"
+            android:text="Save Changes"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_18sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/locIV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/_10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.accu.attendance.customViews.MyEditText
+        android:id="@+id/noteET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@drawable/bg_dialog_et"
+        android:gravity="start"
+        android:hint="Note (Optional)"
+        android:lines="4"
+        android:maxLines="4"
+        android:padding="@dimen/_7dp"
+        android:textColor="@color/Black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locIV" />
+
+    <com.accu.attendance.customViews.MyTextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@color/Black_trans"
+        android:gravity="start"
+        android:padding="@dimen/_7dp"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/locIV"
+        app:layout_constraintLeft_toLeftOf="@id/locIV"
+        app:layout_constraintRight_toRightOf="@id/locIV"
+        app:layout_constraintTop_toTopOf="@+id/locIV" />
+</android.support.constraint.ConstraintLayout>

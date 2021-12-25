@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "779808351271",
+    "firebase_url": "https://accutendance-67e28.firebaseio.com",
+    "project_id": "accutendance-67e28",
+    "storage_bucket": "accutendance-67e28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779808351271:android:a7382b843764357a",
+        "android_client_info": {
+          "package_name": "com.accu.attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779808351271-gec733f4fh31v3da9si8otsgvcmvsfbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4zUcSrAhg374z7BRcLGFjTo8zBU8HzGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
